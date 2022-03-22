@@ -22,15 +22,15 @@ public class Selenium4_Feature_TakeScreenhsot {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
-		driver.get("https://bhuvaneswarisilkemporium.com/login?back=my-account");
+		driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
 		
 		
-		WebElement email = driver.findElement(By.xpath("//input[@name='email']"));
-		WebElement password = driver.findElement(By.xpath("//input[@name='password']"));
-		WebElement loginButton = driver.findElement(By.id("submit-login"));
+		WebElement email = driver.findElement(By.id("email"));
+		WebElement password = driver.findElement(By.id("passwd"));
+		WebElement loginButton = driver.findElement(By.id("SubmitLogin"));
 		
-		email.sendKeys("rdinesh1979@gmail.com");
-	    password.sendKeys("rdinu123");
+		email.sendKeys("dineshrenganathan@solutionchamps.com");
+	    password.sendKeys("Welcome123$");
 
 		takeScreeshot(email,"email");
 		takeScreeshot(password,"password");
